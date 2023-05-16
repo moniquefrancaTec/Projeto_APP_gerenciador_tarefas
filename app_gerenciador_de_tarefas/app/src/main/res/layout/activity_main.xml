@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAE2E2"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="53dp"
+        android:layout_height="44dp"
+        android:backgroundTint="@color/cor_button_criar"
+        app:icon="@android:drawable/ic_input_add"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="655dp" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/cor_button_salvar"
+        app:icon="@android:drawable/ic_menu_save"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/cor_button_excluir"
+        app:icon="@android:drawable/ic_delete"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/cor_button_salvar"
+        app:icon="@android:drawable/ic_menu_save"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="660dp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/cor_button_excluir"
+        app:icon="@android:drawable/ic_delete"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="660dp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/cor_button_salvar"
+        app:icon="@android:drawable/ic_menu_save"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="602dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/cor_button_excluir"
+        app:icon="@android:drawable/ic_delete"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="602dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/cor_button_salvar"
+        android:text="Salvar"
+        app:icon="@android:drawable/ic_menu_save"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <TextView
+        android:layout_width="256dp"
+        android:layout_height="43dp"
+        android:text="Gerenciador de Tarefas!"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        app:srcCompat="?android:attr/actionModeFindDrawable"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="64dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:drawable/ic_menu_today"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="314dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Título da Tarefa"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="314dp"
+        android:layout_height="83dp"
+        android:ems="10"
+        android:hint="Descrição da tarefa"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="xx/xx/xxxx"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="126dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/cor_button_criar"
+        android:text="Criar"
+        app:icon="@android:drawable/ic_input_add"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+        tools:layout_editor_absoluteX="14dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="558dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/cor_button_excluir"
+        android:text="Excluir"
+        app:icon="@android:drawable/ic_delete"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="407dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="170dp"
+        android:layout_height="37dp"
+        android:text="Reunião "
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="178dp"
+        android:layout_height="38dp"
+        android:text="Curso de Java"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="602dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="181dp"
+        android:layout_height="40dp"
+        android:text="Prova de Java"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="659dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="163dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:text="Aula de TI"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        tools:layout_editor_absoluteX="17dp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/cor_button_salvar"
+        app:icon="@android:drawable/ic_menu_save"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="493dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/cor_button_excluir"
+        app:icon="@android:drawable/ic_delete"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="493dp" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="53dp"
+        android:layout_height="44dp"
+        android:backgroundTint="@color/cor_button_criar"
+        app:icon="@android:drawable/ic_input_add"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="602dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
