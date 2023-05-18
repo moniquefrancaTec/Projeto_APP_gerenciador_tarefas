@@ -7,248 +7,284 @@
     android:background="#FAE2E2"
     tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="53dp"
-        android:layout_height="44dp"
-        android:backgroundTint="@color/cor_button_criar"
-        app:icon="@android:drawable/ic_input_add"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="655dp" />
-
-    <Button
-        android:id="@+id/button16"
-        android:layout_width="49dp"
-        android:layout_height="39dp"
-        android:backgroundTint="@color/cor_button_salvar"
-        app:icon="@android:drawable/ic_menu_save"
-        tools:layout_editor_absoluteX="241dp"
-        tools:layout_editor_absoluteY="545dp" />
-
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="49dp"
-        android:layout_height="39dp"
-        android:backgroundTint="@color/cor_button_excluir"
-        app:icon="@android:drawable/ic_delete"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="545dp" />
-
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="49dp"
-        android:layout_height="39dp"
-        android:backgroundTint="@color/cor_button_salvar"
-        app:icon="@android:drawable/ic_menu_save"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="660dp" />
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="49dp"
-        android:layout_height="39dp"
-        android:backgroundTint="@color/cor_button_excluir"
-        app:icon="@android:drawable/ic_delete"
-        tools:layout_editor_absoluteX="203dp"
-        tools:layout_editor_absoluteY="660dp" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="49dp"
-        android:layout_height="39dp"
-        android:backgroundTint="@color/cor_button_salvar"
-        app:icon="@android:drawable/ic_menu_save"
-        tools:layout_editor_absoluteX="241dp"
-        tools:layout_editor_absoluteY="602dp" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="49dp"
-        android:layout_height="39dp"
-        android:backgroundTint="@color/cor_button_excluir"
-        app:icon="@android:drawable/ic_delete"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="602dp" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="4dp"
-        android:backgroundTint="@color/cor_button_salvar"
-        android:text="Salvar"
-        app:icon="@android:drawable/ic_menu_save"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
-
     <TextView
+        android:id="@+id/txt_titulo"
         android:layout_width="256dp"
         android:layout_height="43dp"
-        android:text="Gerenciador de Tarefas!"
+        android:layout_marginBottom="32dp"
+        android:text="@string/txt_gerenciador_de_tarefas"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txt_TituloTarefa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_folha"
+        android:layout_width="59dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_titulo"
+        app:layout_constraintEnd_toStartOf="@+id/image_calendario"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162" />
+        app:layout_constraintVertical_bias="0.022"
+        app:srcCompat="?android:attr/actionModeFindDrawable" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="50dp"
-        android:layout_height="52dp"
-        app:srcCompat="?android:attr/actionModeFindDrawable"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="39dp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/image_calendario"
         android:layout_width="64dp"
         android:layout_height="60dp"
-        app:srcCompat="@android:drawable/ic_menu_today"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="30dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txt_titulo"
+        app:layout_constraintEnd_toStartOf="@+id/image_lapis"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@android:drawable/ic_menu_today" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_lapis"
         android:layout_width="66dp"
         android:layout_height="61dp"
-        app:srcCompat="@android:drawable/ic_menu_edit"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="30dp" />
+        android:layout_marginEnd="108dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/txt_TituloTarefa"
         android:layout_width="314dp"
         android:layout_height="41dp"
+        android:layout_marginBottom="32dp"
         android:ems="10"
-        android:hint="Título da Tarefa"
+        android:hint="@string/txt_titulo_da_tarefa"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="177dp" />
+        app:layout_constraintBottom_toTopOf="@+id/text_descricaoTarefa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/text_descricaoTarefa"
         android:layout_width="314dp"
         android:layout_height="83dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
-        android:hint="Descrição da tarefa"
+        android:hint="@string/txt_descrico_da_tarefa"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="236dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txt_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/txt_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
         android:ems="10"
-        android:hint="xx/xx/xxxx"
+        android:hint="@string/txt_data"
         android:inputType="date"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="333dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_criar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_criar"
         android:layout_width="126dp"
         android:layout_height="49dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginBottom="28dp"
         android:backgroundTint="@color/cor_button_criar"
-        android:text="Criar"
+        android:text="@string/txt_criar"
         app:icon="@android:drawable/ic_input_add"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
-        tools:layout_editor_absoluteX="14dp" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/checkbox_on_background"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="504dp" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/checkbox_on_background"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="558dp" />
+        app:layout_constraintBottom_toTopOf="@+id/checkBox1"
+        app:layout_constraintEnd_toStartOf="@+id/button_salvarPrincipal"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button_editar"
+        android:layout_width="53dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/cor_button_criar"
+        app:icon="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_editar1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button_salvar1"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/cor_button_salvar"
+        app:icon="@android:drawable/ic_menu_save"
+        app:layout_constraintBottom_toTopOf="@+id/button_editar2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_excluir1"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/cor_button_excluir"
+        app:icon="@android:drawable/ic_delete"
+        app:layout_constraintBottom_toTopOf="@+id/button_excluir3"
+        app:layout_constraintEnd_toStartOf="@+id/button_salvar1"
+        app:layout_constraintTop_toBottomOf="@+id/button_salvar2" />
+
+    <Button
+        android:id="@+id/button_exlcuir1"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/cor_button_salvar"
+        app:icon="@android:drawable/ic_menu_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_editar" />
+
+    <Button
+        android:id="@+id/button_excluir2"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/cor_button_excluir"
+        app:icon="@android:drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_exlcuir1" />
+
+    <Button
+        android:id="@+id/button_editar2"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/cor_button_salvar"
+        app:icon="@android:drawable/ic_menu_save"
+        app:layout_constraintBottom_toTopOf="@+id/button_exlcuir1"
+        app:layout_constraintEnd_toStartOf="@+id/button_editar1" />
+
+    <Button
+        android:id="@+id/button_excluir3"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/cor_button_excluir"
+        app:icon="@android:drawable/ic_delete"
+        app:layout_constraintBottom_toTopOf="@+id/button_excluir2"
+        app:layout_constraintEnd_toStartOf="@+id/button_editar2"
+        app:layout_constraintTop_toBottomOf="@+id/button_salvar1" />
+
+
+    <Button
+        android:id="@+id/button_salvarPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cor_button_salvar"
+        android:text="@string/txt_salvar"
+        app:icon="@android:drawable/ic_menu_save"
+        app:layout_constraintBottom_toTopOf="@+id/button_excluir4"
+        app:layout_constraintEnd_toStartOf="@+id/button_excluir_Principal"
+        app:layout_constraintTop_toBottomOf="@+id/txt_data" />
+
+     <Button
+        android:id="@+id/button_excluir_Principal"
         android:layout_width="0dp"
         android:layout_height="53dp"
         android:backgroundTint="@color/cor_button_excluir"
-        android:text="Excluir"
+        android:text="@string/txt_excluir"
         app:icon="@android:drawable/ic_delete"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="407dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_salvar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_data" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:text="@string/txt_reuniao"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+        app:layout_constraintEnd_toStartOf="@+id/button_excluir1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="178dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/txt_curso_de_java"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+        app:layout_constraintEnd_toStartOf="@+id/button_excluir3"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
         android:id="@+id/checkBox4"
-        android:layout_width="170dp"
-        android:layout_height="37dp"
-        android:text="Reunião "
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="547dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox5"
-        android:layout_width="178dp"
-        android:layout_height="38dp"
-        android:text="Curso de Java"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="602dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox6"
         android:layout_width="181dp"
-        android:layout_height="40dp"
-        android:text="Prova de Java"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/txt_prova_de_java"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="659dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_excluir2"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBox1"
         android:layout_width="163dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="32dp"
-        android:text="Aula de TI"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/txt_aula_de_ti"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
-        tools:layout_editor_absoluteX="17dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_salvar1"
+        app:layout_constraintEnd_toStartOf="@+id/button_excluir4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/button_salvar2"
         android:layout_width="49dp"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="148dp"
         android:backgroundTint="@color/cor_button_salvar"
         app:icon="@android:drawable/ic_menu_save"
-        tools:layout_editor_absoluteX="241dp"
-        tools:layout_editor_absoluteY="493dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_salvar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_criar"
+        app:layout_constraintVertical_bias="0.707" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/button_excluir4"
         android:layout_width="49dp"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
         android:backgroundTint="@color/cor_button_excluir"
         app:icon="@android:drawable/ic_delete"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="493dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_excluir1"
+        app:layout_constraintEnd_toStartOf="@+id/button_salvar2"
+        app:layout_constraintTop_toBottomOf="@+id/button_excluir_Principal"
+        app:layout_constraintVertical_bias="0.69" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/button_editar1"
         android:layout_width="53dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="72dp"
         android:backgroundTint="@color/cor_button_criar"
         app:icon="@android:drawable/ic_input_add"
-        tools:layout_editor_absoluteX="293dp"
-        tools:layout_editor_absoluteY="602dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_exlcuir1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_salvar1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
