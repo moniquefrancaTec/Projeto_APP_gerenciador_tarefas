@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAE2E2"
-    tools:context=".MainActivity">
+    tools:context=".View.MainActivity">
 
     <TextView
         android:id="@+id/txt_titulo"
@@ -84,207 +84,51 @@
         android:id="@+id/txt_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
         android:ems="10"
         android:hint="@string/txt_data"
+        android:importantForAutofill="no"
         android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/button_criar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        android:importantForAutofill="no" />
-
-    <Button
-        android:id="@+id/button_criar"
-        android:layout_width="126dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="28dp"
-        android:backgroundTint="@color/cor_button_criar"
-        android:text="@string/txt_criar"
-        app:icon="@android:drawable/ic_input_add"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox1"
-        app:layout_constraintEnd_toStartOf="@+id/button_salvarPrincipal"
-        app:layout_constraintHorizontal_bias="0.842"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button_editar"
-        android:layout_width="53dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/cor_button_criar"
-        app:icon="@android:drawable/ic_input_add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_editar1"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/button_salvar1"
-        android:layout_width="49dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/cor_button_salvar"
-        app:icon="@android:drawable/ic_menu_save"
-        app:layout_constraintBottom_toTopOf="@+id/button_editar2"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button_excluir1"
-        android:layout_width="49dp"
-        android:layout_height="48dp"
-        android:backgroundTint="@color/cor_button_excluir"
-        app:icon="@android:drawable/ic_delete"
-        app:layout_constraintBottom_toTopOf="@+id/button_excluir3"
-        app:layout_constraintEnd_toStartOf="@+id/button_salvar1"
-        app:layout_constraintTop_toBottomOf="@+id/button_salvar2" />
-
-    <Button
-        android:id="@+id/button_exlcuir1"
-        android:layout_width="49dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="28dp"
-        android:backgroundTint="@color/cor_button_salvar"
-        app:icon="@android:drawable/ic_menu_save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_editar" />
-
-    <Button
-        android:id="@+id/button_excluir2"
-        android:layout_width="49dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="28dp"
-        android:backgroundTint="@color/cor_button_excluir"
-        app:icon="@android:drawable/ic_delete"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_exlcuir1" />
-
-    <Button
-        android:id="@+id/button_editar2"
-        android:layout_width="49dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/cor_button_salvar"
-        app:icon="@android:drawable/ic_menu_save"
-        app:layout_constraintBottom_toTopOf="@+id/button_exlcuir1"
-        app:layout_constraintEnd_toStartOf="@+id/button_editar1" />
-
-    <Button
-        android:id="@+id/button_excluir3"
-        android:layout_width="49dp"
-        android:layout_height="48dp"
-        android:backgroundTint="@color/cor_button_excluir"
-        app:icon="@android:drawable/ic_delete"
-        app:layout_constraintBottom_toTopOf="@+id/button_excluir2"
-        app:layout_constraintEnd_toStartOf="@+id/button_editar2"
-        app:layout_constraintTop_toBottomOf="@+id/button_salvar1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
         android:id="@+id/button_salvarPrincipal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="48dp"
         android:backgroundTint="@color/cor_button_salvar"
         android:text="@string/txt_salvar"
         app:icon="@android:drawable/ic_menu_save"
-        app:layout_constraintBottom_toTopOf="@+id/button_excluir4"
         app:layout_constraintEnd_toStartOf="@+id/button_excluir_Principal"
         app:layout_constraintTop_toBottomOf="@+id/txt_data" />
 
-     <Button
+    <Button
         android:id="@+id/button_excluir_Principal"
         android:layout_width="0dp"
         android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
         android:backgroundTint="@color/cor_button_excluir"
         android:text="@string/txt_excluir"
         app:icon="@android:drawable/ic_delete"
-        app:layout_constraintBottom_toTopOf="@+id/button_salvar2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_data" />
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="170dp"
-        android:layout_height="48dp"
-        android:text="@string/txt_reuniao"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
-        app:layout_constraintEnd_toStartOf="@+id/button_excluir1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
-
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="178dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/txt_curso_de_java"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
-        app:layout_constraintEnd_toStartOf="@+id/button_excluir3"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <CheckBox
-        android:id="@+id/checkBox4"
-        android:layout_width="181dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="28dp"
-        android:text="@string/txt_prova_de_java"
-        android:textSize="20sp"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="321dp"
+        android:layout_height="196dp"
+        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_excluir2"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <CheckBox
-        android:id="@+id/checkBox1"
-        android:layout_width="163dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="12dp"
-        android:text="@string/txt_aula_de_ti"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_salvar1"
-        app:layout_constraintEnd_toStartOf="@+id/button_excluir4"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button_salvar2"
-        android:layout_width="49dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="148dp"
-        android:backgroundTint="@color/cor_button_salvar"
-        app:icon="@android:drawable/ic_menu_save"
-        app:layout_constraintBottom_toTopOf="@+id/button_salvar1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_criar"
-        app:layout_constraintVertical_bias="0.707" />
-
-    <Button
-        android:id="@+id/button_excluir4"
-        android:layout_width="49dp"
-        android:layout_height="48dp"
-        android:backgroundTint="@color/cor_button_excluir"
-        app:icon="@android:drawable/ic_delete"
-        app:layout_constraintBottom_toTopOf="@+id/button_excluir1"
-        app:layout_constraintEnd_toStartOf="@+id/button_salvar2"
-        app:layout_constraintTop_toBottomOf="@+id/button_excluir_Principal"
-        app:layout_constraintVertical_bias="0.69" />
-
-    <Button
-        android:id="@+id/button_editar1"
-        android:layout_width="53dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="72dp"
-        android:backgroundTint="@color/cor_button_criar"
-        app:icon="@android:drawable/ic_input_add"
-        app:layout_constraintBottom_toTopOf="@+id/button_exlcuir1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_salvar1" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_data"
+        app:layout_constraintVertical_bias="0.891" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
